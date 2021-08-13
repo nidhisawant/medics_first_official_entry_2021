@@ -16,6 +16,7 @@ end
 label = zeros([1,num_classes]);
 
 score = zeros([1,num_classes]);
+labelThreshold=0.4;
 
 % Extract features from test data
 tmp_hea = strsplit(header_data{1},' ');
