@@ -27,7 +27,7 @@ pac(pac>1)=1;
 pvc(pvc>1)=1;
 labels=[new_label(:,1:4) clbbb rbbb new_label(:,9:17) pac new_label(:,20:21) pvc new_label(:,24:30)];
 
-idx_1=find(sum(labels,2)==0);
+idx_1=find(sum(labels,2)~=0);
 labels=labels(idx_1,:);
 data=data(idx_1,:);
 
